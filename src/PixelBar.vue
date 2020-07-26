@@ -70,7 +70,7 @@ export default {
         if (this.count > this.value) clearInterval(interval);
 
         this.count += this.value / (_c * 100);
-      }, parseInt(this.duration / (_c * 100)));
+      }, parseInt((this.duration * 1000) / (_c * 100)));
     },
   },
   watch: {
