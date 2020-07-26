@@ -1,0 +1,11 @@
+{
+  "name": "vue-pixel-bar",
+  "version": "1.0.0",
+  "description": "sweet progress pixel bar",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Merouane Boucenna",
+  "license": "MIT"
+}
