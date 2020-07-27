@@ -4,7 +4,7 @@
       <slot :count="animatedCount" />
     </span>
     <div id="main" :style="{'width':`${animatedCount/maxValue*100}%`}"></div>
-    <div class="container-pixel" :class="{'disabled':count/maxValue*100===100}">
+    <div class="container-pixel" :class="{'disabled':count/maxValue*100>100}">
       <div class="row" id="r-four">
         <span class="sq" id="sq-10"></span>
         <span class="sq" id="sq-11"></span>
@@ -35,7 +35,7 @@ export default {
   props: {
     value: {
       type: Number,
-      default: 0,
+      default: 2000,
     },
     maxValue: {
       type: Number,
@@ -43,7 +43,7 @@ export default {
     },
     duration: {
       type: Number,
-      default: 4,
+      default: 4000,
     },
     play: {
       type: Boolean,
@@ -64,7 +64,8 @@ export default {
     },
   },
   mounted(){
-    if(this.play)this.countTo()
+    // if(this.play)
+    this.countTo()
   },
   methods: {
     countTo() {
@@ -74,7 +75,7 @@ export default {
         if (this.count > this.value) clearInterval(interval);
 
         this.count += this.value / (_c * 100);
-      }, parseInt((this.duration * 1000) / (_c * 100)));
+      }, parseInt((this.duration) / (_c * 100)));
     },
   },
   watch: {
