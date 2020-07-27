@@ -5,11 +5,13 @@
  
  vue-pixel-bar is a dependency-free, lightweight vue component that can be overwrited by yourself.
  Css bar Made by Aleks
+
+![pixelBar](https://user-images.githubusercontent.com/41240951/88576431-5a9c5a00-d03d-11ea-8bab-933bef13c4df.png)
+
 ### How to use?
 ```bash
 npm install vue-pixel-bar
 ```
-
 
 ### Example
 
@@ -39,7 +41,5 @@ npm install vue-pixel-bar
 | -----------------  | ---------------- | :--------: |
 |    default    | Writing on the progress bar |  return current progress value |
 
-
 ## License
-
-This project is licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License
+This project is licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License)

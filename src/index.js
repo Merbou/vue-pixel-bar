@@ -1,7 +1,9 @@
-import PixelBar from "./PixelBar.vue";
+import VuePixelBar from "./PixelBar.vue";
 
-export default {
-    install(Vue,options){
-        Vue.component("pixel-bar",PixelBar)
-    }
-}
+Object.defineProperty(VuePixelBar, 'install', {
+	value(Vue) {
+        Vue.component("vue-pixel-bar",VuePixelBar)
+	}
+})
+
+export default VuePixelBar
