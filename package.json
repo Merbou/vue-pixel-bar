@@ -1,11 +1,21 @@
 {
+  "private": false,
   "name": "vue-pixel-bar",
   "version": "1.0.0",
-  "description": "sweet progress pixel bar",
-  "main": "main.js",
-  "scripts": {
-    "test": "test"
-  },
   "author": "Merouane Boucenna",
-  "license": "MIT"
+  "description": "sweet progress pixel bar",
+  "main": "/dist/index.js",
+  "scripts": {
+    "dev": "vue serve src/PixelBar.vue",
+    "build": "bili --name index --plugin vue --vue.css false"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "bili": "^5.0.5",
+    "rollup-plugin-vue": "^5.1.9",
+    "vue-template-compiler": "^2.6.11"
+  }
 }

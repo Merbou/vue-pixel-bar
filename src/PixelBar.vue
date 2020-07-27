@@ -47,6 +47,7 @@ export default {
     },
     play: {
       type: Boolean,
+      default:false
     },
     classBar: {
       type: String,
@@ -61,6 +62,9 @@ export default {
     animatedCount: function () {
       return this.count.toFixed(0);
     },
+  },
+  mounted(){
+    if(this.play)this.countTo()
   },
   methods: {
     countTo() {
@@ -103,6 +107,9 @@ export default {
   right: 0px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
 }
 #main {
   width: 200px;
